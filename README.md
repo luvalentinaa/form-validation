@@ -18,5 +18,6 @@
 - Propriedades personalizadas de CSS
 - Flexbox
 - Grade CSS
+- Javascript
 
 
