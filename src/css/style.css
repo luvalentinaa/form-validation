@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar{
+  width: 5px;
+  background-color: #fa8f03;
+}
+::-webkit-scrollbar-thumb{
+  width: 5px;
+  background-color: #140c01;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16.2%;
+  background-color: #18181a;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  width: 100%;
+  max-width: 00px;
+  height: 79vh;
+  max-width: 850px;
+  background-image:linear-gradient(55deg , #000 ,#000,rgb(30, 32, 2), #f3a513  );
+  display: flex;
+  margin: 5rem auto;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  position: relative;
+
+}
+.image{
+  width: 200px;
+  position: absolute;
+  top: 0;
+}
+.text {
+  width: 60%;
+  display: block;
+  padding: 1.5rem;
+}
+.contact {
+  width: 40%;
+  height: 100%;
+  max-width: 400px;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  border-radius: 0.8rem;
+  background-color: #0a0a0a;
+}
+.title {
+  color: #fff;
+  text-shadow:2px 2px 2px #fa8f03;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 23, 44px;
+  margin-bottom: 2rem;
+
+}
+.paragraph {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: 400;
+}
+small,
+strong {
+  font-size: 1.2rem;
+}
+input,
+textarea {
+  width: 100%;
+  color: #fff;
+  padding: 1.1rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ee8105;
+  cursor: pointer;
+}
+#send {
+  width: 100%;
+  padding: .8rem;
+  font-size: 22px;
+  border-radius: 0.6rem;
+  border: transparent;
+  cursor: pointer;
+  background-color: #fa8f03;
+}
+.error::before {
+  margin: 10px;
+  content: 'campo obrigatório';
+  color: red;
+  font-size: 1.2rem;
+}
+.invalid {
+  border-bottom: 2px solid #fd0404;
+}
+.valid {
+  border-bottom:2px solid #29cf29;
+}

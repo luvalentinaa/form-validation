@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário com Válidação</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https: //fonts.googleapis.com/css2? family = IBM + Plex + Sans: ital, wght @ 0,100; 0,200; 1,300 &família = Roboto: wght @ 300; 400; 700 & display = swap "
+      rel=" stylesheet "
+    />
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+
+  <link rel="shortcut icon" href="./src/img/duvidas.png" type="image/x-icon">
+</head>
+<body>
+  <section class="container">
+
+    <img class="image" src="./src/img/duvidas.png" alt="">
+      <div class="text">
+         <h1 class="title">FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</h1>
+         <p class="paragraph">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.          
+         </p>
+      </div>
+      <div class="contact">       
+        <form  class="form" id="form">   
+          <input type="text" id="nome" class="inputs"  maxlength="50" minlength="2" placeholder="Nome completo" required>
+          <span  id="mensagem" class="mensagem"></span> 
+          <br></br>  
+          <input type="email" id="email" class="inputs" maxlength="50" placeholder="E-mail.@.com" required>
+          <span id="mensagemEmail"  class="mensagem"></span> 
+          <br></br>
+          <input type="tel" id="telefone" class="inputs"  placeholder="Telefone" required>
+          <span id="mensagemTel" class="mensagem" ></span> 
+          <br></br>
+          <textarea id="textarea" class="inputs" cols="30" rows="10" placeholder="Digite sua mensagem aqui..." required></textarea>
+          <strong id="mensagemTextarea"></strong>
+          <br></br>
+          <small>*campos obrigatórios</small>
+           <br></br>
+          <input id="send" type="submit" value="Enviar">
+        </form> 
+      </div>  
+  </section>
+  <script src="./src/js/index.js"></script>
+</body>
+</html>
